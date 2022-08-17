@@ -1,13 +1,12 @@
 import React from 'react';
 import './varDefinitions.css';
 import './App.css';
+import './styles.scss';
 
 import TopLine from './components/Topline'
-import HeadSKaT from './components/HeadSKaT'
-
 import { HashRouter, Routes, Route } from 'react-router-dom'
 
-import Home from './pages/Home'
+import Home from './pages/HeadSKaT'
 import AboutUsPage from './pages/AboutUsPage'
 import Electronics from './pages/Electronics'
 import Jewelry from './pages/Jewelry'
@@ -21,7 +20,6 @@ function App() {
     <div className="App">
         <HashRouter>
           <TopLine />
-          <HeadSKaT />
 
           <Routes>
             <Route path='/' element={<Home />} />
