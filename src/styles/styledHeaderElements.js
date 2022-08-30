@@ -41,8 +41,10 @@ export const StyledIngress = styled.div`
   color: var(--darkColorReduced);
   background-color: var(--lightColorFull);
   text-overflow: clip;
+  overflow: auto;
+  white-space: pre-line;
   min-height: 15em;
-  height:fit-content;
+  height: var(--ingressMaxHeight);
   z-index: inherit;
 
   border: 1px solid var(--darkColorFull);
@@ -52,26 +54,26 @@ export const StyledIngress = styled.div`
 `;
 
 export const StyledIngressHeader = styled.h2`
-  font-size: clamp(1rem, 2.5vw, 2rem); 
+  font-size: clamp(1rem, 1.5rem, 2rem); 
   margin: 0 auto;
   padding: 1rem 0;
 `;
 
 export const StyledIngressText = styled.h3`
-  font-size: clamp(0.6rem, 2vw, 1rem); 
+  font-size: clamp(0.6rem, 0.8rem, 1rem); 
   text-align: left;
   padding: 1rem;
 `;
 
 export const StyledIngressBody = styled.h4`
-  font-size: clamp(0.6rem, 2vw, 1rem); 
+  font-size: clamp(0.6rem, 0.8rem, 1rem); 
   text-align: left;
   padding: 0.5rem;
 `;
 
 export const StyledIngressDetails = styled.p`
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(0.6rem, 2vw, 1rem); 
+  font-size: clamp(0.6rem, 0.8rem, 1rem); 
   font-style: italic;
   text-align: left;
   padding: 0.5rem;

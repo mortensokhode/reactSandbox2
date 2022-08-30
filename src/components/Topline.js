@@ -17,7 +17,7 @@ function TopLine() {
 */}
 
                 <nav className='categoriesBar'>
-                    <Link className="navbarLink" to="/#"><h2>Home</h2></Link>
+                    <Link className="navbarLink" to="/"><h2>Home</h2></Link>
                     <Link className="navbarLink" to="/electronics"><h2>Electronics</h2></Link>
                     <Link className="navbarLink" to="/jewelery"><h2>Jewelery</h2></Link>
                     <Link className="navbarLink" to="/mensclothes"><h2>Men's clothes</h2></Link>

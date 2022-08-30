@@ -21,7 +21,7 @@ body,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 150;
+  z-index: 1;
 }
 
 .topIconLink {
@@ -69,7 +69,7 @@ body,
   opacity: 0.9;
   display: flex;
   justify-content: space-between;
-  z-index: 950;
+  z-index: 10;
 }  
 
 .topline-sticky {
@@ -84,7 +84,7 @@ body,
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  z-index: 150;
+  z-index: 1;
 }
 
 .topline-content-box {
@@ -92,14 +92,14 @@ body,
   margin: 0;
   width: var(--toplineSideWidth);
   height: 100%;
-  z-index: 950;
+  z-index: 10;
 }
 
 .left-side-box, .right-side-box {
   background-color: transparent;
   color: var(--darkColorFull);
   width: var(--toplineSideWidth);
-  z-index: 950;
+  z-index: 10;
 }
 
 .left-side-box {
@@ -137,14 +137,14 @@ body,
   margin: 4vh auto 25vh auto;
   padding: 2em 2em;
   width: var(--ingressFrameWidth);
-  height:fit-content;
-  z-index: 200;
+  z-index: 2;
 }
 
 .card:hover {
   cursor: pointer;
 }
 
+ 
 .blurredShadow {
   border: 1px solid var(--darkColorFull);
   border-radius: var(--roundCorners);
@@ -195,6 +195,10 @@ body,
   max-width: var(--ingressImgMaxWidth);
   width: var(--ingressImgWidth);
   height: auto;
+}
+
+.translate3dImage {
+  transform: translate3d(calc((var(--ingressBoxWidth)/5)*3), -20px, 0);
 }
 
 .smallIcon {

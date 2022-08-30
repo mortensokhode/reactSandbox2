@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledIngress, StyledIngressHeader, StyledIngressBody, StyledIngressDetails } from "../styles/styledHeaderElements";
+import { StyledIngress, StyledIngressHeader, StyledIngressBody, StyledIngressDetails, StyledIngressText } from "../styles/styledHeaderElements";
 
 
 const IngressBox = (props) => {
@@ -8,11 +8,11 @@ const IngressBox = (props) => {
         <StyledIngress>
             <StyledIngressHeader>{props.product.title}</StyledIngressHeader>  
             <div className='IngressText'>
-                {(props.cardSide === "front") ?  
-                                                <StyledIngressBody>
-                                                    Price: ${props.product.price} <br />
-                                                    <img src={props.product.img} alt="Product image" className="responsiveTinyImg" />
-                                                </StyledIngressBody>
+                {(props.cardSide === "front") ? 
+                                                <StyledIngressText>
+                                                    Price: ${props.product.price}
+                                                    <img src={props.product.img} alt="Product image" className="responsiveTinyImg translate3dImage" />
+                                                </StyledIngressText>
                                             :
                                                 <StyledIngressBody>
                                                     Id: {props.product.id} <br />

@@ -1,21 +1,21 @@
 .flipcard-outer {
     width: var(--ingressBoxWidth);
     margin: 0 auto;
-
-  
+    
+    
     .flipcard-inner {
       transform-style: preserve-3d;
       transition: .5s linear .1s;
       position: relative;
- 
+      
       &.hover-trigger:hover {
         transform: rotateY(180deg);
-       }
-  
+      }
+      
       &.showBack {
         transform: rotateY(180deg);
-       }
-    
+      }
+      
       .card {
         backface-visibility: hidden;
         position: absolute;
@@ -23,16 +23,14 @@
         left:0;
         width: inherit;
         height: inherit;
-
+        
         
         &.front {
           transform: rotateY(0);
-          z-index:200;
         }
         
         &.back {
           transform: rotateY(180deg);
-          z-index:300;
         }
       }
     }

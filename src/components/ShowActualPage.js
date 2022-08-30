@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FENDP_SPECIFIC_CAT, EMPTYOBJECT} from '../constantExports/globalConstants'
+import { FENDP_PRODUCTS, FENDP_SPECIFIC_CAT, EMPTYOBJECT} from '../constantExports/globalConstants'
 import DataFetcher from "../classComponents/DataFetcher"
 import Products from "../components/Products"
 // import IngressFrame from '../components/IngressFrame';
@@ -11,8 +11,12 @@ import Products from "../components/Products"
 
 export default function ShowActualPage({productLine}) {
 
-  const endPointInUse = FENDP_SPECIFIC_CAT+productLine
+  console.log("productLine: ", productLine )
+  const endPointInUse = productLine ? (FENDP_PRODUCTS+FENDP_SPECIFIC_CAT+productLine) : FENDP_PRODUCTS
+  console.log("endPointInUse: ", endPointInUse)
   
+  
+  // endPointInUse = FENDP_PRODUCTS+FENDP_SPECIFIC_CAT+productLine
   return (
     <div className="IngressMain">
       
