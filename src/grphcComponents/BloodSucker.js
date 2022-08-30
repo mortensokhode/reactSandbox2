@@ -1,11 +1,13 @@
 import React from 'react'
 import { ReactComponent as BloodSuckerIcn } from "../img/frontal-bat-svgrepo-com.svg";
 
-function BloodSucker() {
+function BloodSucker(props) {
   return (
-    <svg className="smallIcon">
-        <BloodSuckerIcn />
-    </svg>
+    props.showIcon && (
+          <svg className="smallIcon">
+              <BloodSuckerIcn />
+          </svg>
+    ) 
   )
 }
 

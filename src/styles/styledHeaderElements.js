@@ -35,7 +35,7 @@ export const StyledMain = styled.main`
 
 export const StyledIngress = styled.div`
   width: var(--ingressBoxWidth);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-radius: var(--roundCorners);
   color: var(--darkColorReduced);
@@ -43,6 +43,7 @@ export const StyledIngress = styled.div`
   text-overflow: clip;
   min-height: 15em;
   height:fit-content;
+  z-index: inherit;
 
   border: 1px solid var(--darkColorFull);
   box-shadow: 4px 3px 4px var(--darkColorFull);
@@ -61,3 +62,19 @@ export const StyledIngressText = styled.h3`
   text-align: left;
   padding: 1rem;
 `;
+
+export const StyledIngressBody = styled.h4`
+  font-size: clamp(0.6rem, 2vw, 1rem); 
+  text-align: left;
+  padding: 0.5rem;
+`;
+
+export const StyledIngressDetails = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.6rem, 2vw, 1rem); 
+  font-style: italic;
+  text-align: left;
+  padding: 0.5rem;
+`;
+
+

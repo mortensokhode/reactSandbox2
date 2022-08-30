@@ -1,14 +1,18 @@
 /* General CSS */
-html, body {
+html, 
+body,
+.App {
   margin: 0 auto;
   font-family: 'Roboto', 'Montserrat', sans-serif;
+  color: var(--darkColorFull);
   background-color: var(--lightColorFull);
   background-blend-mode: normal;
-  color: var(--darkColorFull);
   font-size: 100%;
-  max-height: var(--mainHeight);
   max-width: var(--mainWidth);
   box-sizing: border-box;
+  height:calc(fit-content+15vh);
+  max-height:calc(fit-content+25vh);
+  padding-bottom: var(--mainBottomPadding);
 }
 
 .Header-box {
@@ -47,9 +51,7 @@ html, body {
 
 /*  hovedapplikasjon  */
 .App {
-  margin: 0 auto;
   text-align: center;
-  height: var(--mainHeight);
 }
 
 /* topline CSS */
@@ -117,16 +119,26 @@ html, body {
   margin-top: 5px;
 }
 
-.IngressRamme {
-  margin: 2rem auto 8rem auto;
+.IngressMain {
+  box-sizing: border-box;
+  margin: 0 auto;
   padding: 2em 2em;
-  width: var(--middleSectionWidth);
   height:fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
+  width: var(--middleSectionWidth);
+  justify-content: space-evenly;
+}
+
+.IngressFrame {
+  box-sizing: border-box;
+  margin: 4vh auto 25vh auto;
+  padding: 2em 2em;
+  width: var(--ingressFrameWidth);
+  height:fit-content;
+  z-index: 200;
 }
 
 .card:hover {
@@ -175,6 +187,16 @@ html, body {
   height: auto;
 }
 
+
+.responsiveTinyImg {
+  position: auto;
+  margin: 5px;
+  padding-top:5px;
+  max-width: var(--ingressImgMaxWidth);
+  width: var(--ingressImgWidth);
+  height: auto;
+}
+
 .smallIcon {
   height: 4rem;
   stroke-width: 6px;
@@ -205,4 +227,20 @@ html, body {
 .navbarLink:active{
   color: var(--darkColorReduced);
   font-weight: bolder;
+}
+
+.productList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.productList li {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--darkColorReduced);
+}
+
+.productList li span {
+  display: block;
+  text-align: center;
 }

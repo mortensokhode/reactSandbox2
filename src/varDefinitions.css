@@ -13,10 +13,13 @@
 
   /*  Site/Size definitions  */
   --mainWidth: 100vw;
-  --mainHeight: 100vh;
+  --mainBottomPadding: 7vh;
   --toplineSideWidth: 10vw;
   --middleSectionWidth: 75vw;
   --ingressBoxWidth: 33vw;
+  --ingressImgMaxWidth: 10vw;
+  --ingressImgWidth: 6vw;
+  --ingressFrameWidth: 35vw;
 
   --buttonWidth: 4vw;
   --buttonHeight: 7vh;
