@@ -59,6 +59,43 @@ const HeadSKaT = () => {
                                     back:<IngressBox  cardSide="back"
                                                       product={tempElectronics} />}} />
               </IngressFrame>
+
+              <IngressFrame>
+                  <FlipCard key={tempJewelery.id} 
+                            card={{ variant:"click", 
+                                    front:<IngressBox cardSide="front" 
+                                                      product={tempJewelery} />,
+                                    back:<IngressBox  cardSide="back"
+                                                      product={tempJewelery} />}} />
+              </IngressFrame>
+              
+              <IngressFrame>
+                  <FlipCard key={tempElectronics.id} 
+                            card={{ variant:"click", 
+                                    front:<IngressBox cardSide="front" 
+                                                      product={tempElectronics} />,
+                                    back:<IngressBox  cardSide="back"
+                                                      product={tempElectronics} />}} />
+              </IngressFrame>
+
+              <IngressFrame>
+                  <FlipCard key={tempJewelery.id} 
+                            card={{ variant:"click", 
+                                    front:<IngressBox cardSide="front" 
+                                                      product={tempJewelery} />,
+                                    back:<IngressBox  cardSide="back"
+                                                      product={tempJewelery} />}} />
+              </IngressFrame>
+              
+              <IngressFrame>
+                  <FlipCard key={tempElectronics.id} 
+                            card={{ variant:"click", 
+                                    front:<IngressBox cardSide="front" 
+                                                      product={tempElectronics} />,
+                                    back:<IngressBox  cardSide="back"
+                                                      product={tempElectronics} />}} />
+              </IngressFrame>
+
               <IngressFrame> <FlipCard key={flipIngress.id} card={EMPTYOBJECT} /> </IngressFrame>
           </div>
          )

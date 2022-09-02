@@ -10,6 +10,9 @@
   /*  Border & button colors  */
   --buttonHover: lightcoral;
   --warningRed: #d21e1e9e;
+  --bloodRed:#ac0808;
+  --batFill: var(--lightColorFull);
+  --batStroke: var(--pitchDark);
 
   /*  Site/Size definitions  */
   --mainWidth: 100vw;

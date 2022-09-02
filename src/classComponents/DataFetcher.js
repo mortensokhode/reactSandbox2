@@ -15,8 +15,7 @@ class DataFetcher extends Component {
 
         fetch(this.props.url)
             .then(res => res.json())
-            .then(data => this.setState({data: data, loading: false, givenURL: this.props.url}
-                                        ))
+            .then(data => this.setState({data: data, loading: false, givenURL: this.props.url}))
             
             .catch(error => console.log(error))
     }
