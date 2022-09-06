@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './varDefinitions.css';
 import './App.css';
-import './styles.scss';
 
 import TopLine from './components/Topline'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -10,7 +9,6 @@ import HeadSKaT from './pages/HeadSKaT'
 import ShowActualPage from './components/ShowActualPage'
 import AboutUsPage from './pages/AboutUsPage'
 import ErrorPage from './pages/ErrorPage'
-import categoriesData from "./data/categories.JSON"
 
 // Here we go..
 function App() {

@@ -1,15 +1,15 @@
 import React from 'react'
-import { StyledIngress } from "../styles/styledHeaderElements";
+import { StyledProductBoxSmall } from "../styles/styledHeaderElements";
 
 function Jewelry() {
   return (
     <div className='IngressRamme'>
-      <StyledIngress>
+      <StyledProductBoxSmall>
         <h2>Jewelry</h2>
           <article>
             <p>this is the jewelry page</p>
           </article>
-      </StyledIngress>
+      </StyledProductBoxSmall>
     </div>
     
   )

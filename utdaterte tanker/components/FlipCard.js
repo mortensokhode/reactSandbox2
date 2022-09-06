@@ -1,7 +1,7 @@
 import { useState } from "react"; 
 import cn from "classnames";
 
-function FlipCard(props) {
+export default function FlipCard(props) {
   const [showBack, setShowBack] = useState(false); 
 
   function handleClick() { 
@@ -17,10 +17,7 @@ function FlipCard(props) {
 
       {/* Handling hover variant flip */}
       <div
-        className={cn("flipcard-inner", {
-          showBack, 
-          "hover-trigger": props.card.variant === "hover"
-        })}>  
+        className={cn("flipcard-inner", {showBack})}>  
 
         {/* Front Side */}
         <div className="card front">
@@ -37,5 +34,3 @@ function FlipCard(props) {
     </div>  // outer div 
   );
 }
-
-export default FlipCard;
