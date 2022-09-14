@@ -6,7 +6,7 @@ import fairyware from "../data/fairyware"
 
 function HeadSKaT() {
     const fairyList = fairyware.map(fairyProduct => (
-        <Link key={fairyProduct.id} to={`/services/${fairyProduct.id}`}><ProductBoxSmall product={fairyProduct} /></Link> 
+        <Link key={fairyProduct.id} to={`/fakeServices/fairyware/${fairyProduct.id}`}><ProductBoxSmall product={fairyProduct} /></Link> 
     ))
 
     return (

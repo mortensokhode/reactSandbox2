@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
+
 import ToplineSideHeading from './ToplineSideHeading';
 
-import { Link } from 'react-router-dom'
+import HeadSKaT from '../pages/HeadSKaT'
+import ShowActualPage from './ShowActualPage'
+import AboutUsPage from '../pages/AboutUsPage'
+import ErrorPage from '../pages/ErrorPage'
 
 function TopLine() {
-
 
     return (
         <>
@@ -25,7 +29,22 @@ function TopLine() {
                 <div className='topline-content-box right-side-box'>
                     <Link className='topIconLink' to="/"><ToplineSideHeading headingType="iconHeading" headingSide="right" /></Link>
                 </div>
+                
             </div>
+
+            <div className="routesList">
+                <Routes>
+                    <Route exact path='/' element={<HeadSKaT />}></Route>
+                    <Route path='/about' element={<AboutUsPage />}></Route>
+                    <Route path='/electronics' element={<ShowActualPage productLine={"electronics"} />}></Route>
+                    <Route path='/jewelery' element={<ShowActualPage productLine={"jewelery"} />}></Route>
+                    <Route path='/mensclothes' element={<ShowActualPage productLine={"men's clothing"} />}></Route>
+                    <Route path='/womensclothes' element={<ShowActualPage productLine={"women's clothing"} />}></Route>
+                    <Route path='*' element={<ErrorPage />}></Route>
+                </Routes>
+            </div>
+
+
         </>
     )
 }

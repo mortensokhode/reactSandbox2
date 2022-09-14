@@ -18,13 +18,17 @@
         "LINKCLOSE",
         "LOREMIPSUM",
         "mensclothes",
+        "mensclothing",
         "MYDATA",
         "NAVARRAY",
+        "predeploy",
         "Ramme",
+        "reduxjs",
         "SUMROUNDFACTOR",
         "TEXTOBJECT",
         "topline",
         "Womens",
-        "womensclothes"
+        "womensclothes",
+        "womensclothing"
     ]
 }

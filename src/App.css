@@ -53,6 +53,10 @@ body,
   position: sticky;
 }  
 
+.noShow {
+  display: none;
+}
+
 .categoriesBar {
   margin: 0 auto;
   width: var(--middleSectionWidth);
@@ -93,13 +97,15 @@ body,
 
 .right-side-box {
   border-radius: var(--roundCorners) 0 0 var(--roundCorners);
+  position: relative;
+  left: 7rem;
 }
 
 .rightHeading {
   width: 60%;
   position:relative;
-  top: -4rem;
-  left: 4rem;
+  top: -5rem;
+  left: 3rem;
 
   color: var(--bloodRed);
   font-weight: bold;

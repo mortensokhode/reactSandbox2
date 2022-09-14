@@ -1,4 +1,4 @@
-[
+export default [
 "electronics",
 "jewelery",
 "men's clothing",
